@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function NotFound() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-center gap-4 bg-white px-6 lg:px-8">
+    <section className="flex h-full w-full flex-grow flex-col items-center justify-center gap-4 px-6 lg:px-8">
       <p className="font-semibold text-indigo-600">404</p>
       <h1 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-5xl">
         Page not found
@@ -16,6 +16,6 @@ export default function NotFound() {
       >
         Go back home
       </Link>
-    </main>
+    </section>
   );
 }

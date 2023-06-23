@@ -1,3 +1,4 @@
+import Navbar from "@/components/Navbar";
 import "./globals.css";
 import { Inter } from "next/font/google";
 
@@ -16,7 +17,19 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body
+        className={`${inter.className} flex min-h-screen flex-col items-center px-5 text-gray-900`}
+      >
+        <Navbar />
+        <main className="flex h-full w-full max-w-7xl flex-grow flex-col">
+          {children}
+        </main>
+        <footer className="border-t border-gray-300 py-7">
+          <div className="mx-auto flex h-full w-screen max-w-7xl items-center justify-center">
+            © 2023 BlogSphere
+          </div>
+        </footer>
+      </body>
     </html>
   );
 }

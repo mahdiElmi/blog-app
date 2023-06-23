@@ -1,5 +1,9 @@
+import Posts from "@/components/Posts";
+
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-center bg-white p-24"></main>
+    <section className="flex min-h-screen w-full flex-col py-10">
+      <Posts />
+    </section>
   );
 }
