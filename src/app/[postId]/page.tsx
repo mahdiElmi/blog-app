@@ -1,15 +1,13 @@
 import React from "react";
 import posts from "@/postsData";
-import { Metadata, ResolvingMetadata } from "next";
+import { Metadata } from "next";
 import Image from "next/image";
 import { notFound } from "next/navigation";
 
 export async function generateMetadata({
   params,
-  parent,
 }: {
   params: { postId: string };
-  parent?: ResolvingMetadata;
 }): Promise<Metadata> {
   const parsedID = parseInt(params.postId);
   if (posts[parsedID] === undefined) notFound();
