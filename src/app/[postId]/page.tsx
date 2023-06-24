@@ -3,16 +3,16 @@ import { Metadata } from "next";
 import Image from "next/image";
 import { notFound } from "next/navigation";
 
-export async function generateMetadata({
+export function generateMetadata({
   params,
 }: {
   params: { postId: string };
-}): Promise<Metadata> {
+}): Metadata {
   const parsedID = parseInt(params.postId);
   if (posts[parsedID] === undefined) notFound();
   const { title, description } = posts[parsedID];
   return {
-    title: `BlogShpere | ${title}`,
+    title,
     description,
   };
 }
@@ -35,7 +35,7 @@ function Post({ params }: { params: { postId: string } }) {
           {title}
         </h1>
       </div>
-      <div className="mx-auto max-w-6xl space-y-5 py-5 font-serif text-xl/8 font-medium">
+      <div className="mx-5 max-w-6xl space-y-5 py-5 pb-10 font-serif text-xl/8 font-medium xl:mx-auto">
         <p className="first-letter:float-left first-letter:me-4 first-letter:text-6xl first-letter:font-bold first-letter:text-black first-line:first-letter:capitalize lg:first-letter:text-8xl ">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur dicta
           ipsum soluta nostrum quidem quasi totam, perspiciatis dolor veritatis,

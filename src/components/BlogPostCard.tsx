@@ -10,10 +10,10 @@ function BlogPostCard({
   description: string;
 }) {
   return (
-    <div className="flex flex-col overflow-hidden rounded-md border border-gray-300 bg-gray-50 @container">
+    <div className="flex flex-col overflow-hidden rounded-md border border-gray-300 bg-gray-50 @container hover:bg-white hover:shadow-sm">
       <Link
         href={`/${id}`}
-        className="decoration group space-y-2 decoration-blue-600 decoration-2 hover:text-blue-600 hover:underline @xs:space-y-6"
+        className="decoration group space-y-2 decoration-indigo-600 decoration-2 hover:text-indigo-600 hover:underline @xs:space-y-6"
       >
         <Image
           className="group group-hover:opacity-90"
