@@ -1,4 +1,3 @@
-import React from "react";
 import posts from "@/postsData";
 import { Metadata } from "next";
 import Image from "next/image";
@@ -24,9 +23,9 @@ function Post({ params }: { params: { postId: string } }) {
   const { id, title } = posts[parsedID];
   return (
     <section className="mb-10 mt-10 overflow-hidden rounded-lg border-b border-black/30 bg-gray-200 text-gray-950">
-      <div className="before: relative">
+      <div className="relative">
         <Image
-          className=""
+          className="bg-gray-900"
           src={`https://picsum.photos/id/${id + 9}/1300/600.webp`}
           alt=""
           width={1300}
