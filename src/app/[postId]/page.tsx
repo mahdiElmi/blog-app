@@ -22,8 +22,8 @@ function Post({ params }: { params: { postId: string } }) {
   if (posts[parsedID] === undefined) notFound();
   const { id, title } = posts[parsedID];
   return (
-    <section className="mb-10 mt-10 overflow-hidden rounded-lg border-b border-black/30 bg-gray-200 text-gray-950">
-      <div className="relative">
+    <section className="mb-10 mt-10 overflow-hidden rounded-lg border-b border-black/30 bg-gray-200 text-gray-950 ">
+      <div className="relative before:absolute before:h-full before:w-full before:bg-gradient-to-t before:from-black/70 before:from-5% before:to-transparent before:content-['']">
         <Image
           className="bg-gray-900"
           src={`https://picsum.photos/id/${id + 9}/1300/600.webp`}

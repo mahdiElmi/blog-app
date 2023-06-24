@@ -55,7 +55,7 @@ const postsData = [
       "Embark on virtual adventures as we share captivating travel stories, breathtaking destinations, and insightful tips to help you plan your next memorable trip and create your own travel tales.",
   },
   {
-    id: 90,
+    id: 9,
     title: "Unleashing Your Inner Entrepreneur: Building a Successful Startup",
     description:
       "Dive into the world of entrepreneurship as we explore startup stories, share business insights, and provide practical guidance to help you navigate the challenges and turn your ideas into a thriving venture.",
